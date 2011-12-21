@@ -1,3 +1,11 @@
+=== Forked for gem release: bbenezech-nested_form
+
+Based on http://github.com/fxposter/nested_form
+
+
+
+
+
 = Nested Form
 
 {<img src="https://secure.travis-ci.org/fxposter/nested_form.png" />}[http://travis-ci.org/fxposter/nested_form]

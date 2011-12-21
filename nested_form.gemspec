@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
-  s.name        = "nested_form"
-  s.version     = "0.1.1"
+  s.name        = "bbenezech-nested_form"
+  s.version     = "0.0.2"
   s.authors     = ["Ryan Bates", "Andrea Singh"]
   s.email       = "ryan@railscasts.com"
-  s.homepage    = "http://github.com/ryanb/nested_form"
-  s.summary     = "Gem to conveniently handle multiple models in a single form."
-  s.description = "Gem to conveniently handle multiple models in a single form with Rails 3 and jQuery or Prototype."
+  s.homepage    = "http://github.com/bbenezech/nested_form"
+  s.summary     = "Gem to conveniently handle multiple models in a single form. Version maintained by fxposter."
+  s.description = "Gem to conveniently handle multiple models in a single form with Rails 3 and jQuery or Prototype. Version maintained by fxposter."
 
   s.files        = Dir["{lib,spec}/**/*", "[A-Z]*"] - ["Gemfile.lock"]
   s.require_path = "lib"

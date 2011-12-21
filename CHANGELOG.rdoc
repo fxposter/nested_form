@@ -1,3 +1,11 @@
+0.0.2
+
+Added a class on blueprint div so that it is possible for javascript to know if a form field is part of a blueprint or for real in the form.
+
+0.0.1
+
+Initial release of the @fxposter version
+
 0.1.1 (April 23, 2011)
 
 * Support HTML options and block in add/remove link - issue #31
