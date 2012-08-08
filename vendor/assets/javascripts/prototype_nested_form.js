@@ -1,4 +1,4 @@
-document.observe('click', function (e, el) {
+document.observe('click', function(e, el) {
   if (el = e.findElement('form a.add_nested_fields')) {
     // Setup
     var assoc = el.readAttribute('data-association');           // Name of child
@@ -45,7 +45,7 @@ document.observe('click', function (e, el) {
     if (hidden_field) {
       hidden_field.value = '1';
     }
-    el.ancestors()[0].hide();
+    el.up('.fields').hide();
     return false;
   }
 });

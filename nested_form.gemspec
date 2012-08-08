@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "nested_form"
-  s.version     = "0.2.0"
+  s.version     = "0.2.2"
   s.authors     = ["Ryan Bates", "Andrea Singh"]
   s.email       = "ryan@railscasts.com"
   s.homepage    = "http://github.com/ryanb/nested_form"
@@ -10,7 +10,9 @@ Gem::Specification.new do |s|
   s.files        = Dir["{lib,spec,vendor}/**/*", "[A-Z]*"] - ["Gemfile.lock"]
   s.require_path = "lib"
 
-  s.add_development_dependency "rspec-rails", "~> 2.6.0"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "rspec-rails", "~> 2.6"
   s.add_development_dependency "mocha"
 
   s.rubyforge_project = s.name

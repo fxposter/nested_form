@@ -21,11 +21,21 @@ describe 'NestedForm' do
     fields.reject { |field| field.visible? }.count.should == 1
   end
 
-  it 'should work with jQuery and Prototype', :js => true do
+  it 'should work with jQuery', :js => true do
     visit '/projects/new'
     check_form
+  end
 
+  it 'should work with Prototype', :js => true do
     visit '/projects/new?type=prototype'
     check_form
+  end
+
+  it 'generates correct name for the nested input', :js => true do
+    visit '/projects/new?type=jquery'
+    click_link 'Add new task'
+    click_link 'Add new milestone'
+    name = find('.fields .fields input[id$=name]')[:name]
+    name.should match(/\Aproject\[tasks_attributes\]\[new_\d+\]\[milestones_attributes\]\[new_\d+\]\[name\]\z/)
   end
 end
